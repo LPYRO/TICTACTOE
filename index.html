@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TIC TAC TOE GAME</title>
+</head>
+<body>
+    <h1 class="gameTitle">TIC TAC TOE</h1>
+        <h1 id="playerWho">Press "Start Game" To Play !</h1>
+     <button onclick="startGame();">Start Game</button>
+     
+     <table class="tabletic" cellspacing="5">
+         <tr>
+             <td onclick="fill(this.id);" id="t1"></td>
+             <td onclick="fill(this.id);" id="t2"></td>
+             <td onclick="fill(this.id);" id="t3"></td>
+        </tr>
+        <tr>
+                <td onclick="fill(this.id); " id="t4"></td>
+                <td onclick="fill(this.id);" id="t5"></td>
+                <td onclick="fill(this.id);" id="t6"></td>
+        </tr>       
+        <tr>
+                <td onclick="fill(this.id);" id="t7"></td>
+                <td onclick="fill(this.id);" id="t8"></td>
+                <td onclick="fill(this.id);" id="t9"></td>
+        </tr> 
+     </table>
+     <h2 id="score">[Score X = 0]  [Score O = 0]</h2>
+     <div class="copy">
+            ZAKARIAE SEGHIR - All Rights Reserved &copy; 2019 .
+     </div>
+</body>
+<script src="game.js"></script>
+</html>
